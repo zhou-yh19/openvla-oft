@@ -510,7 +510,6 @@ def make_interleaved_dataset(
 
     # Get the indices of the "primary" datasets (i.e., datasets with sample_weight == 1.0)
     primary_dataset_indices = np.array([idx for idx in range(len(sample_weights)) if sample_weights[idx] == 1.0])
-
     # Balance and Normalize Weights
     if balance_weights:
         sample_weights = np.array(sample_weights) * np.array(dataset_sizes)
