@@ -716,4 +716,11 @@ OXE_DATASET_CONFIGS = {
         "state_encoding": StateEncoding.TELEAVATAR,
         "action_encoding": ActionEncoding.TELEAVATAR,
     },
+    "teleavatar_teleop_10_demos": {
+        "image_obs_keys": {"primary": "head_camera", "secondary": None, "left_wrist": "left_color", "right_wrist": "right_color"},
+        "depth_obs_keys": {"primary": None, "secondary": None, "wrist": None},
+        "state_obs_keys": ["state"],
+        "state_encoding": StateEncoding.TELEAVATAR,
+        "action_encoding": ActionEncoding.TELEAVATAR,
+    },
 }
